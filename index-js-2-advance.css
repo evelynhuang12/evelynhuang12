@@ -1,0 +1,710 @@
+@font-face {
+  font-family: merriweather-i;
+  src: url(Fonts/Merriweather-LightItalic.ttf);
+}
+@font-face {
+  font-family: exodus;
+  src: url(Fonts/ExodusDemo-Striped.otf);
+}
+@font-face {
+  font-family: nova;
+  src: url(Fonts/Proxima-Nova-Bold.otf);
+}
+@font-face {
+  font-family: georgia;
+  src: url(Fonts/georgia.ttf);
+}
+@font-face {
+  font-family: merriweather;
+  src: url(Fonts/Merriweather-Bold.ttf);
+}
+@font-face {
+  font-family: merriweather-r;
+  src: url(Fonts/Merriweather-Regular.ttf);
+}
+@font-face {
+  font-family: nova-r;
+  src: url(Fonts/ProximaNova-Regular.otf);
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+nav.aos-init {
+  transform: none;
+  opacity: 1 !important;
+}
+
+nav.aos-init.aos-animate h1 {
+  color: black;
+}
+nav.aos-init.aos-animate h1 .menu {
+  fill: black;
+}
+nav.aos-init.aos-animate h1:hover {
+  color: #D1D600;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+nav .nav-but-wrap {
+  margin: -12px 93px 0;
+}
+nav body.nav-active, nav .nav:before {
+  margin: 56px 1121px 0;
+}
+nav body.nav-active, nav .nav:before, nav body.nav-active, nav .nav:after {
+  margin: 56px 1121px 0;
+}
+nav .nav__content {
+  margin: 56px 1121px 0;
+}
+nav a {
+  text-decoration: none;
+}
+nav h1 {
+  font-family: exodus;
+  color: white;
+  padding: 53px 0px 0 62px;
+  font-weight: 100;
+  font-size: 24pt;
+}
+nav h1:hover {
+  color: #D1D600;
+}
+nav .menu {
+  display: flex;
+  height: 15px;
+  padding: 70px 0 0 981px;
+}
+nav .menu img {
+  height: 25px;
+  padding: 0 20px 0 20px;
+}
+nav .menu .nav-menu {
+  padding-left: 100px;
+  padding-top: 3px;
+  height: 21px;
+}
+
+header {
+  background-image: url("IMGs/header-bg.png");
+  height: 100vh;
+  background-repeat: none;
+  background-size: cover;
+}
+header .header-profile-img {
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  height: 100vh;
+}
+header .title .he {
+  font-size: 300px;
+  color: white;
+  font-family: nova;
+  padding: 229px 100px 100px 255px;
+  z-index: 2;
+}
+header .title h1 {
+  color: white;
+  font-size: 300px;
+  font-family: nova;
+  position: absolute;
+  padding: 229px 100px 100px 796px;
+  letter-spacing: 60px;
+  z-index: 4;
+}
+header .title p {
+  font-size: 1.5em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  margin: 477px 0px 0px 816px;
+  z-index: 5;
+  position: absolute;
+  letter-spacing: 3.5px;
+}
+header .title p span {
+  color: #D1D600;
+}
+
+.section-1 {
+  background-image: url("IMGs/bg-profile.png");
+  height: 100vh;
+  background-repeat: none;
+  background-size: cover;
+  display: flex;
+}
+.section-1 .section-1-flex-1 {
+  width: 20%;
+  margin: 100px 100px 100px 120px;
+}
+.section-1 .section-1-flex-1 p {
+  font-family: merriweather-r;
+  font-weight: 100;
+  font-size: 0.9em;
+  line-height: 21px;
+  padding-bottom: 12px;
+}
+.section-1 .section-1-flex-1 h6 {
+  font-family: nova;
+  font-size: 1.1em;
+  color: #747474;
+  margin: 44px 0 25px 0;
+}
+.section-1 img {
+  height: 84vh;
+  margin: 75px 0px 0 0px;
+  padding-left: 10px;
+}
+.section-1 .section-1-flex-2 {
+  font-family: merriweather-r;
+  font-weight: 100;
+  margin: 136px 100px 100px 120px;
+}
+.section-1 .section-1-flex-2 p {
+  line-height: 21px;
+  padding-bottom: 12px;
+  font-family: merriweather-r;
+  font-weight: 100;
+  font-size: 0.9em;
+}
+.section-1 .section-1-flex-2 span {
+  color: #D1D600;
+}
+.section-1 .section-1-flex-2 h6 {
+  font-family: nova;
+  font-size: 1.1em;
+  color: #747474;
+}
+.section-1 .section-1-flex-2 .language h6 {
+  margin: 30px 0px 20px 0;
+}
+.section-1 .section-1-flex-2 .passions h6 {
+  margin-bottom: 20px;
+}
+.section-1 .section-1-flex-2 .experience h6 {
+  font-size: 1.5em;
+  margin: 65px 0px 0 26px;
+}
+.section-1 .section-1-flex-2 .experience .h6-2 {
+  margin-top: 10px;
+  font-family: merriweather;
+  color: black;
+  font-size: 4em;
+  padding-left: 106px;
+}
+.section-1 .section-1-flex-2 .accomplished h6 {
+  font-size: 1.5em;
+  margin-top: 63px;
+  margin-bottom: 0px;
+}
+.section-1 .section-1-flex-2 .accomplished .h6-2 {
+  margin-top: 10px;
+  font-family: merriweather;
+  color: black;
+  font-size: 4em;
+  padding-left: 115px;
+}
+
+.section-2 {
+  background-image: url("IMGs/section-2-bg.png");
+  background-size: cover;
+  height: 208vh;
+}
+.section-2 span {
+  color: #D1D600;
+}
+.section-2 .title-section-2 {
+  display: flex;
+  padding: 100px 0 100px 0;
+}
+.section-2 .title-section-2 hr {
+  width: 50%;
+  height: 0px;
+  background-color: white;
+  margin: 21px 60px 0 60px;
+  opacity: 100;
+  color: white;
+}
+.section-2 .title-section-2 h5 {
+  font-family: merriweather-r;
+  font-weight: 100;
+  margin: 0;
+  font-size: 2em;
+  width: 22%;
+}
+.section-2 hr {
+  background-color: white;
+  margin: 80px 60px 0 50px;
+  opacity: 100;
+  color: white;
+  height: 0.3vh;
+}
+
+.software {
+  display: flex;
+  justify-content: space-around;
+}
+.software .content-2-software {
+  height: 20vh;
+}
+.software .krita, .software .illustrator {
+  padding-top: 100px;
+}
+.software .adobe-xd p {
+  font-family: merriweather-r;
+  padding-left: 40px;
+  margin-top: 3px;
+}
+.software .adobe-xd h1 {
+  font-family: nova;
+  font-size: 4.8em;
+  margin-top: 0;
+  color: #2B2B2B;
+}
+.software .photoshop p, .software .illustrator p {
+  font-family: merriweather-r;
+  padding-left: 35px;
+  margin-top: 3px;
+}
+.software .photoshop h1, .software .illustrator h1 {
+  font-family: nova;
+  font-size: 4.8em;
+  margin-top: 0;
+  color: #2B2B2B;
+}
+.software .krita p, .software .blender p {
+  font-family: merriweather-r;
+  padding-left: 61px;
+  margin-top: 0;
+}
+.software .krita .content-2-acc, .software .blender .content-2-acc {
+  margin-left: 76px;
+  margin-bottom: 10px;
+}
+.software .krita h1, .software .blender h1 {
+  font-family: nova;
+  font-size: 4.8em;
+  margin-top: 0;
+  color: #2B2B2B;
+}
+.software .content-2-acc {
+  height: 3vh;
+  width: 6%;
+  margin-left: 71px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.software .blender .content-2-acc {
+  margin-left: 88px;
+}
+
+hr {
+  width: 93%;
+  height: 0.4vh;
+  background-color: white;
+  margin-top: 80px;
+}
+
+.education {
+  margin: 100px 0 0 15px;
+}
+.education h1 {
+  font-family: merriweather-r;
+  font-weight: 100;
+  color: #2B2B2B;
+  font-size: 2em;
+  margin: 0 0 0 36px;
+}
+.education h1 span {
+  color: #D1D600;
+}
+.education .content-2-flex {
+  display: flex;
+}
+.education .content-2-flex img {
+  height: 55vh;
+  margin: -24px 0 0 234px;
+}
+.education .education-flex {
+  display: flex;
+  padding: 120px 0 0 39px;
+}
+.education .education-flex h6 {
+  font-family: nova;
+  color: #D9D9D9;
+  font-size: 1.4em;
+  margin-bottom: 29px;
+}
+.education .education-flex p {
+  font-family: merriweather-r;
+  color: #2B2B2B;
+  line-height: 24px;
+  font-size: 1.1em;
+}
+.education .education-flex .year-2017 {
+  padding-right: 100px;
+}
+.education .toc-desc {
+  margin-top: 13px;
+}
+.education .toc-desc p {
+  font-family: merriweather-r;
+  margin-bottom: 7px;
+  font-size: 1.4em;
+  color: black;
+}
+.education .toc-desc .nav-link p:hover {
+  color: #D1D600;
+}
+.education .toc-desc .nav-link {
+  text-decoration: none;
+}
+.education .toc-desc .toc-p-2 {
+  color: #2B2B2B;
+}
+.education .toc-desc p:before {
+  border: white 1px solid;
+  background-color: white;
+  content: "";
+  margin-right: 5px;
+}
+.education .toc-desc .toc-p-2 {
+  font-family: merriweather-i;
+  margin-top: 0;
+  font-size: 0.9em;
+}
+.education .toc-desc .digital-art, .education .toc-desc .modelling, .education .toc-desc .photography {
+  margin: 26px 0 75px 35px;
+}
+
+.section-3 {
+  background-image: url("IMGs/content-heading-1.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+.section-3 .h-1 {
+  font-family: nova;
+  margin: 0px 0px 0px 128px;
+  padding-top: 265px;
+  color: white;
+  font-size: 8em;
+  letter-spacing: 3pt;
+}
+.section-3 .h-2 {
+  font-size: 8em;
+  letter-spacing: 3pt;
+  font-family: nova;
+  color: #D1D600;
+  letter-spacing: 3pt;
+  margin: -58px 100px 100px 567px;
+}
+.section-3 .section-3-acc {
+  margin: 94px 0 0 43px;
+  height: 8vh;
+}
+
+.section-4 .section-4-img {
+  margin: 0 0 0 180px;
+}
+.section-4 .section-4-img .section-4-img-1 {
+  height: 74vh;
+}
+.section-4 .section-4-img .section-4-img-2 {
+  height: 95vh;
+  padding-left: 28px;
+}
+.section-4 h1 {
+  font-family: nova;
+  color: #2B2B2B;
+  position: absolute;
+  margin: -57px 0 100px 829px;
+  font-size: 6.5em;
+}
+.section-4 p {
+  font-family: merriweather-r;
+  color: #3e3e3e;
+  margin: 10px 979px 0 179px;
+  line-height: 20px;
+}
+.section-4 .section-4-bg {
+  background-color: #2B2B2B;
+  height: 100vh;
+  width: 20%;
+  margin: 85px 0 0 1215px;
+  position: absolute;
+  z-index: -1;
+}
+.section-4 .section-4-img-2 {
+  padding: 157px 0 0 151px;
+}
+.section-4 .section-4-img-2 img {
+  height: 81vh;
+  padding-right: 16px;
+}
+
+.section-5 {
+  background-image: url("IMGs/content-heading-2.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  margin-top: 67px;
+}
+.section-5 .h-1 {
+  font-family: nova;
+  margin: 0px 0px 0px 128px;
+  padding-top: 265px;
+  color: white;
+  font-size: 8em;
+  letter-spacing: 3pt;
+}
+.section-5 .h-2 {
+  font-size: 8em;
+  letter-spacing: 3pt;
+  font-family: nova;
+  color: #D1D600;
+  margin: -43px 0px 100px 207px;
+}
+.section-5 .section-5-acc {
+  margin: 67px 0 6px 43px;
+  height: 8vh;
+}
+
+.section-6 .section-6-flex-1 {
+  display: flex;
+  margin: 150px 0 0 143px;
+}
+.section-6 .section-6-flex-1 .section-6-img img {
+  height: 40vh;
+  margin: 5px;
+}
+.section-6 .section-6-heading-1 {
+  font-family: nova;
+  font-size: 5em;
+  line-height: 101px;
+  margin: 160px 0 0 10px;
+  color: #2B2B2B;
+}
+.section-6 .section-6-heading-1 .h-1 {
+  color: #D1D600;
+}
+.section-6 .section-6-img-5-flex {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 70px;
+}
+.section-6 .section-6-img-5-flex .section-6-img-5 {
+  height: 103vh;
+}
+.section-6 .section-6-heading-2 {
+  font-family: nova;
+  font-size: 5em;
+  text-align: right;
+  margin: -637px 981px 0 0;
+}
+.section-6 .section-6-heading-2 span {
+  color: #D1D600;
+}
+.section-6 p {
+  margin: 10px 1106px 0 109px;
+  font-family: merriweather-r;
+  text-align: right;
+  line-height: 20px;
+}
+.section-6 hr {
+  background-color: #D1D600;
+  border: none;
+  height: 0.5vh;
+  border-radius: 100px;
+  width: 21%;
+  margin: 10px 0 0 107px;
+  opacity: 100;
+}
+
+.section-7 {
+  background-image: url("IMGs/content-heading-3.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  margin-top: 333px;
+}
+.section-7 .section-7-acc {
+  margin: 214px 0 6px 43px;
+  height: 8vh;
+}
+.section-7 h1 {
+  font-family: nova;
+  margin: 0px 0px 0px 128px;
+  padding-top: 303px;
+  color: white;
+  font-size: 8em;
+  letter-spacing: 3pt;
+}
+.section-7 span {
+  color: #D1D600;
+}
+
+.section-8 .section-8-flex-1 {
+  margin: 100px 50px;
+  display: flex;
+}
+.section-8 .section-8-flex-1 img {
+  height: 40vh;
+  padding-right: 18px;
+}
+.section-8 .section-8-flex-1 .h-1 {
+  font-family: nova;
+  font-size: 2.8em;
+  margin: 67px 0 0 -9px;
+  color: #D1D600;
+}
+.section-8 .section-8-flex-1 .h-2 {
+  font-family: nova;
+  font-size: 2.8em;
+  margin: 125px 0 0 -160px;
+}
+.section-8 .section-8-flex-1 .h-3 {
+  font-family: nova;
+  font-size: 2.8em;
+  margin: 179px 0 0 -135px;
+}
+.section-8 .section-8-flex-2 {
+  margin: -84px 0px 0 49px;
+  display: flex;
+}
+.section-8 .section-8-flex-2 .yellow-box {
+  background-color: #D1D600;
+}
+.section-8 .section-8-flex-2 img {
+  height: 39.5vh;
+  padding-left: 20px;
+}
+.section-8 .section-8-flex-2 .section-8-img-3 {
+  border-left: 10px #D1D600 solid;
+  border-width: 55px;
+}
+
+.section-9 {
+  background-image: url("IMGs/section-9-bg.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  margin-top: 100px;
+}
+.section-9 h1 {
+  color: white;
+  font-family: nova;
+  font-size: 5em;
+  margin: 0px 100px 0px 277px;
+  padding-top: 114px;
+}
+.section-9 a {
+  text-decoration: none;
+}
+.section-9 a span {
+  color: #D1D600;
+}
+.section-9 p {
+  font-family: merriweather-r;
+  color: white;
+}
+.section-9 .section-9-p-1 {
+  font-size: 1.4em;
+  margin: 15px 100px 0 619px;
+}
+.section-9 .section-9-p-1 span {
+  color: #D1D600;
+}
+.section-9 .section-9-logo {
+  font-weight: 100;
+  font-size: 24pt;
+  font-family: exodus;
+  color: white;
+  margin: 208px 100px 0 690px;
+}
+.section-9 .section-9-flex {
+  display: flex;
+  margin: 40px 0 0 279px;
+}
+.section-9 .section-9-flex h6 {
+  font-family: nova-r;
+  color: white;
+  font-weight: 100;
+  font-size: 2.2em;
+  padding: 10px 212px 0 0;
+  border-top: white 2px solid;
+  margin: 0 154px -10px 0;
+}
+.section-9 .section-9-flex .section-9-instagram {
+  display: flex;
+}
+.section-9 .section-9-flex .section-9-instagram img {
+  height: 8vh;
+  margin: 14px 150px 0 -214px;
+}
+.section-9 .section-9-flex p {
+  color: #D1D600;
+  padding-top: 15px;
+}
+.section-9 .section-9-flex .section-9-gmail {
+  display: flex;
+}
+.section-9 .section-9-flex .section-9-gmail h6 {
+  padding-right: 293px;
+}
+.section-9 .section-9-flex .section-9-gmail img {
+  height: 8vh;
+  margin: 14px 0 0 -226px;
+}
