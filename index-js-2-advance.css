@@ -83,7 +83,7 @@ nav.aos-init {
 nav.aos-init.aos-animate h1 {
   color: black;
 }
-nav.aos-init.aos-animate .cls-1 {
+nav.aos-init.aos-animate h1 .menu {
   fill: black;
 }
 nav.aos-init.aos-animate h1:hover {
@@ -96,14 +96,9 @@ nav {
   position: fixed;
   top: 0;
   z-index: 100;
-  left: 0;
-  right: 0;
-  height: 22vh;
-  align-items: center;
-  padding: 0px 85px 0 72px;
 }
 nav .nav-but-wrap {
-  padding-left: 100px;
+  margin: -12px 93px 0;
 }
 nav body.nav-active, nav .nav:before {
   margin: 56px 1121px 0;
@@ -120,6 +115,7 @@ nav a {
 nav h1 {
   font-family: exodus;
   color: white;
+  padding: 53px 0px 0 62px;
   font-weight: 100;
   font-size: 24pt;
 }
@@ -128,9 +124,10 @@ nav h1:hover {
 }
 nav .menu {
   display: flex;
-  padding-top: 15px;
+  height: 15px;
+  padding: 70px 0 0 981px;
 }
-nav .menu svg {
+nav .menu img {
   height: 25px;
   padding: 0 20px 0 20px;
 }
@@ -151,8 +148,6 @@ header .header-profile-img {
   position: absolute;
   z-index: 3;
   height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 header .title .he {
   font-size: 300px;
