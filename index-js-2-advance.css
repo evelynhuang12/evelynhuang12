@@ -39,7 +39,9 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
 }
 
 footer, header, nav, section, main {
@@ -149,7 +151,8 @@ header .header-profile-img {
   position: absolute;
   z-index: 3;
   height: 100vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 header .title .he {
   font-size: 300px;
@@ -710,5 +713,3 @@ hr {
   height: 8vh;
   margin: 14px 0 0 -226px;
 }
-
-/*# sourceMappingURL=index-js-2-advance.css.map */
